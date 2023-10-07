@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navHeader">
+      <nav class="navBar"><h1>CALCULATOR</h1></nav>
+    </header>
+    <div class="container">
+      <div class="containerPadding">
+        <div class="calculatorLayout">
+          <div class="items CalculatorDisplay">
+            <input
+              type="text"
+              class="Display display-1"
+              id="previous-display"
+              disabled
+            />
+            <input
+              type="text"
+              class="Display display-2"
+              id="current-display"
+              disabled
+            />
+          </div>
+          <button class="items Center" onclick="appendToDisplay('(')">(</button>
+          <button class="items Center" onclick="appendToDisplay(')')">)</button>
+          <button class="items Center" onclick="useAnswer()">ans</button>
+          <button class="items Center" onclick="deleteLastChar()">del</button>
+          <button class="items Center" onclick="clearDisplay()">clear</button>
+          <button class="items Center" onclick="appendToDisplay('7')">7</button>
+          <button class="items Center" onclick="appendToDisplay('8')">8</button>
+          <button class="items Center" onclick="appendToDisplay('9')">9</button>
+          <button class="items Center" onclick="appendToDisplay('%')">%</button>
+          <button class="items Center" onclick="appendToDisplay('√')">√</button>
+          <button class="items Center" onclick="appendToDisplay('4')">4</button>
+          <button class="items Center" onclick="appendToDisplay('5')">5</button>
+          <button class="items Center" onclick="appendToDisplay('6')">6</button>
+          <button class="items Center" onclick="appendToDisplay('*')">*</button>
+          <button class="items Center" onclick="appendToDisplay('/')">/</button>
+          <button class="items Center" onclick="appendToDisplay('1')">1</button>
+          <button class="items Center" onclick="appendToDisplay('2')">2</button>
+          <button class="items Center" onclick="appendToDisplay('3')">3</button>
+          <button class="items Center" onclick="appendToDisplay('+')">+</button>
+          <button class="items Center" onclick="appendToDisplay('-')">-</button>
+          <button class="items Center" onclick="appendToDisplay('.')">.</button>
+          <button class="items Center" onclick="appendToDisplay('0')">0</button>
+          <button class="items Center" onclick="togglePlusMinus()">±</button>
+          <button class="items Center enterBtn" onclick="calculateResult()">
+            ENTER
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

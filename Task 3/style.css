@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #252a34;
+}
+header {
+  text-align: center;
+  padding: 14px;
+  color: #ff2e63;
+  border-bottom: 1px solid #08d9d6;
+  background-color: #252a34;
+}
+.border {
+  border: 2px solid red;
+}
+.cell {
+  width: 50%;
+  height: calc(100vh - 66px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.submitButton {
+  margin: 20px;
+  padding: 4px;
+  border: 1px solid #252a34;
+  border-radius: 6px;
+  background-color: #08d9d6;
+}
+.TodoList {
+  width: 90%;
+  height: 80%;
+  border: 1px solid #252a34;
+  border-radius: 14px;
+  padding: 4px;
+  background: #eaeaea;
+}
+.task-container {
+  height: auto;
+  width: 100%;
+  border: 1px solid #252a34;
+  border-radius: 14px;
+  background-color: #ff2e63;
+  margin-bottom: 4px;
+}
+.taskTitle {
+  width: 90%;
+  height: 100%;
+  border-radius: 14px;
+  padding-left: 6px;
+  word-wrap: break-word;
+  border: 1px solid #252a34;
+  background-color: #252a34;
+  color: #eaeaea;
+}
+.task-cancel {
+  width: 30px;
+  text-align: center;
+  background-color: #252a34;
+  color: #08d9d6;
+}
+.textAreaContainer {
+  width: 70%;
+  height: 20%;
+  padding: 10px;
+  border: 1px solid #252a34;
+  border-radius: 14px;
+}
+.text-input {
+  width: 70%;
+  height: 5%;
+  padding: 10px;
+  margin-bottom: 4px;
+  border: 1px solid #252a34;
+  border-radius: 14px;
+  font-size: 16px;
+}
+.taskHeader {
+  justify-content: space-between;
+  margin: 5px 5px;
+}
+.taskContent {
+  margin: 0 5px 5px 5px;
+  padding: 0 6px;
+  word-wrap: break-word;
+}
